@@ -1,0 +1,308 @@
+/* full body styling */
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    background: crimson; 
+    z-index: 1;
+    text-align: center;
+}
+
+#header .logo {
+    margin: 0;
+    padding: 10px 0;
+}
+header:hover {
+   background: #03055b;
+}
+
+nav {
+    width: 100%;
+    background: #ccc; 
+    z-index: 2;
+    padding: 10px 0;
+    margin: 0;
+    top: 150px;
+    position: fixed;
+    text-align: center;
+}
+
+#nav, li, a{
+    color: #be3c09;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#sub-header {
+    padding-top: 250px; /* Adjust this to ensure enough space for the fixed header and nav */
+    margin: 0;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#sub-header img {
+    width: 100%;
+    position: relative;
+}
+#product-of-the-week h2{
+    color: black;
+text-align: center;
+text-transform: uppercase;
+}
+#product-of-the-week div{
+    color: crimson;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#Avengers-suggestions h2{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#Avengers-suggestions div{
+    color: crimson;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#made-for-avenger-fans h2{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#made-for-avenger-fans div{
+    color: crimson;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#customers-choice h2{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#customers-choice div{
+    color: crimson;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+
+article{
+    font-family: arial;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    word-wrap: none;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.blog-post{
+    font-family: arial;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    word-wrap: none;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 5px #ccc;
+    border-left: none;
+    border-right: none;
+}
+#about{
+    background-color: crimson;
+    text-align: center;
+}
+
+#about h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    background-color: crimson; 
+    padding: 4px 12px;
+    border: 8px solid wheat;
+    border-radius: 36px;
+    display: inline-block;
+    font-size: larger;
+    
+}
+
+footer{
+    background-color: wheat;
+    border-style: solid blue;
+   box-sizing: border-box;
+   text-align: center;
+   padding-bottom: 5px;
+   padding-top: auto;
+}
+footer form{
+    text-align: center;
+}
+
+.contact{
+    background-color: crimson;
+    box-sizing: border-box;
+    text-align: center;
+}
+.contact h2{
+    color: black;
+    border: 8px solid wheat;
+    padding: 4px 12px;
+    display: inline-block;
+    border-radius: 36px;
+    background-color: crimson;
+    text-transform: uppercase;
+
+}
+.contact h3, p{
+    text-align: center;
+    font-family: arial;
+}
+.reach{
+    text-align: center;
+    font-weight: lighter;
+}
+/* pseudo */
+nav li a:hover{
+    color: #03055b;
+}
+nav li a:visited{
+    color: #3E8e41;
+}
+footer a:hover{
+    color: #333;
+}
+footer a:visited{
+color: #7a288a
+;}
+footer button:valid{
+    color: crimson;
+}
+footer button:hover{
+    color: #3E8e41;
+}
+/* @media screen for laptop */
+@media screen and (max-width: 1115px) {
+    #product-of-the-week div{
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+        padding: 1px;
+        margin: 1px;
+    }
+    .black-widow{
+        visibility: hidden;
+    }
+    .thor{
+        visibility: hidden;
+    }
+    .vision{
+        visibility: hidden;
+    }
+    .doctor-strange{
+        visibility: hidden;
+    }
+    #customers-choice{
+        padding: 1px;
+        margin: 1px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 355px){
+
+.black-widow{
+    visibility: visible;
+}
+.thor{
+    visibility: visible;
+}
+.vision{
+    visibility: visible;
+}
+.doctor-strange{
+    visibility: visible;
+}
+#customers-choice{
+    padding: 1px;
+    margin: 1px;
+    height: auto;
+}
+nav {
+    width: 100%;
+    background: #ccc; 
+    z-index: 2;
+    padding: 10px 0;
+    margin: 0;
+    top: 130px;
+    position: fixed;
+    text-align: center;
+}
+#nav, li, a{
+    color: #be3c09;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#sub-header h1{
+    font-size: 14px;
+    padding: 2px 0;
+    margin: 2px 0;
+}
+section h2{
+    font-size: 20px;
+}
+ }
+@media screen and (max-width: 738px){
+   .black-widow{
+    visibility: visible;
+}
+.thor{
+    visibility: visible;
+}
+.vision{
+    visibility: visible;
+}
+.doctor-strange{
+    visibility: visible;
+}
+    /* element to animate */
+.logo{
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* Keyframes */
+@keyframes drive{
+    from{transform: translateX(0); }
+    to{transform: translateX(510px);}
+}
