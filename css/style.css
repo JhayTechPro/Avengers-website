@@ -19,7 +19,12 @@ body {
 #header .logo {
     margin: 0;
     padding: 10px 0;
+    position: relative;
+    top: -33px;
+    max-width: 100%;
+    height: auto;
 }
+
 header:hover {
    background: #03055b;
 }
@@ -60,26 +65,24 @@ nav {
 text-align: center;
 text-transform: uppercase;
 }
+
 #product-of-the-week div{
     color: crimson;
-    white-space: nowrap;
-    display: inline-block;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    margin: 0px 90px;
 }
-#Avengers-suggestions h2{
+
+#avengers-suggestions h2{
     color: black;
     text-align: center;
     text-transform: uppercase;
 }
-#Avengers-suggestions div{
+
+#avengers-suggestions div{
     color: crimson;
-    white-space: nowrap;
-    display: inline-block;
     text-align: center;
     padding: 5px;
-    margin: 10px;
+    margin: 0px 123px;
 }
 #made-for-avenger-fans h2{
     color: black;
@@ -88,11 +91,9 @@ text-transform: uppercase;
 }
 #made-for-avenger-fans div{
     color: crimson;
-    white-space: nowrap;
-    display: inline-block;
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 0px 123px;
 }
 #customers-choice h2{
     color: black;
@@ -102,11 +103,9 @@ text-transform: uppercase;
 
 #customers-choice div{
     color: crimson;
-    white-space: nowrap;
-    display: inline-block;
     text-align: center;
     padding: 3px;
-    margin: 5px;
+    margin: 0px 110px;
 }
 
 article{
@@ -152,15 +151,34 @@ article{
 }
 
 footer{
-    background-color: wheat;
-    border-style: solid blue;
+   background-color: wheat;
    box-sizing: border-box;
    text-align: center;
    padding-bottom: 5px;
    padding-top: auto;
 }
-footer form{
+
+.footer-logo{
+    max-width: 100%;
+    height: auto;
+}
+footer button{
+    width: 220px;
+    height: 28px;
+    font-size: large;
+    text-transform: capitalize;
+    color: wheat;
+    background-color: crimson;
+}
+
+
+form input{
     text-align: center;
+    font-size: large;
+}
+
+form label{
+    display: none;
 }
 
 .contact{
@@ -168,6 +186,7 @@ footer form{
     box-sizing: border-box;
     text-align: center;
 }
+
 .contact h2{
     color: black;
     border: 8px solid wheat;
@@ -178,62 +197,172 @@ footer form{
     text-transform: uppercase;
 
 }
+
 .contact h3, p{
     text-align: center;
     font-family: arial;
 }
+
 .reach{
     text-align: center;
     font-weight: lighter;
 }
+
+
+
+#shop-all-avengers{
+    background-color: crimson;
+    box-sizing: border-box;
+    text-align: center;
+} 
+
+#shop-all-avengers h2{
+    color: black;
+    border: 8px solid wheat;
+    padding: 4px 12px;
+    display: inline-block;
+    border-radius: 36px;
+    background-color: crimson;
+    text-transform: uppercase;
+}
+
+#product-page footer a{
+    color: white;
+    background-color: crimson;
+    border: 2px solid black;
+    position: relative;
+    top: 12px;
+}
+#product-page footer{
+    position: relative;
+    height: 50px;
+}
+
+footer a{
+    background-color: crimson;
+    color: white;
+    border: 2px solid black;
+    position: relative;
+    top: -7px;
+}
+
 /* pseudo */
 nav li a:hover{
     color: #03055b;
 }
+
 nav li a:visited{
     color: #3E8e41;
 }
+
 footer a:hover{
-    color: #333;
-}
-footer a:visited{
-color: #7a288a
-;}
-footer button:valid{
-    color: crimson;
-}
-footer button:hover{
-    color: #3E8e41;
-}
-/* @media screen for laptop */
-@media screen and (max-width: 1115px) {
-    #product-of-the-week div{
-        white-space: nowrap;
-        display: inline-block;
-        text-align: center;
-        padding: 1px;
-        margin: 1px;
-    }
-    .black-widow{
-        visibility: hidden;
-    }
-    .thor{
-        visibility: hidden;
-    }
-    .vision{
-        visibility: hidden;
-    }
-    .doctor-strange{
-        visibility: hidden;
-    }
-    #customers-choice{
-        padding: 1px;
-        margin: 1px;
-        height: auto;
-    }
+    color: #03055b;
+    background-color: #ccc;
 }
 
-@media screen and (max-width: 355px){
+footer a:visited{
+   color: cadetblue;
+}
+
+footer button:valid{
+    color: whitesmoke;
+}
+
+footer button:hover{
+    color: crimson;
+    background-color: #ccc;
+}
+
+
+#product-page footer a:hover{
+    color: #03055b;
+    background-color: #ccc; 
+}
+
+
+
+/* mini device */
+@media screen  and (max-width:297px){
+  
+    
+
+
+#logo{
+    width: 120px;
+}
+
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    background: crimson; 
+    z-index: 1;
+    text-align: center;
+    height: 200px;
+}
+
+#header .logo {
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#product-of-the-week div{
+    padding: 0;
+    position: relative;
+    margin: 0px -30px;
+}
+
+#avengers-suggestions div{
+    padding: 0;
+    position: relative;
+    margin: 0px -30px;
+}
+
+
+
+#made-for-avenger-fans h2{
+    font-size: medium;
+ }
+
+ #made-for-avenger-fans div{
+    padding: 0;
+    position: relative;
+    margin: 0px -18px;
+ }
+ 
+  #customers-choice div{
+    padding: 0;
+    position: relative;
+    margin: 0px -30px;
+ } 
+
+ #shop-all-avengers h2{
+    font-size: medium;
+}
+
+
+}
+
+
+
+
+/* extra small device */
+@media screen and (max-width: 600px){
+
+body{
+   padding: 0px;
+   margin: 0px;
+   width: 100%;
+}
 
 .black-widow{
     visibility: visible;
@@ -252,6 +381,41 @@ footer button:hover{
     margin: 1px;
     height: auto;
 }
+
+article p{
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+div{ overflow: hidden;
+}
+
+
+#product-of-the-week div{
+    padding: 0;
+    position: relative;
+    margin: 0px -10px;
+ }
+ 
+ #avengers-suggestions div{
+    padding: 0;
+    position: relative;
+    margin: 0px 19px;
+ }
+ 
+ #made-for-avenger-fans div{
+    padding: 0;
+    position: relative;
+    margin: 0px 27px;
+ }
+ 
+ #customers-choice{
+    padding: 0;
+    position: relative;
+    margin: 0px -100px;
+ }
+
+
 nav {
     width: 100%;
     background: #ccc; 
@@ -264,10 +428,11 @@ nav {
 }
 #nav, li, a{
     color: #be3c09;
-    padding: 0px;
+    padding: 3px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-size: small;
 }
 #sub-header h1{
     font-size: 14px;
@@ -277,21 +442,242 @@ nav {
 section h2{
     font-size: 20px;
 }
- }
-@media screen and (max-width: 738px){
-   .black-widow{
-    visibility: visible;
+
+
 }
-.thor{
-    visibility: visible;
+
+/* end of extra small device */
+
+
+/* small devices */
+@media screen and (min-width: 600px){
+#product-of-the-week div{
+   padding: 20px;
 }
-.vision{
-    visibility: visible;
+
+#avengers-suggestions div{
+    padding: 25px;
 }
-.doctor-strange{
-    visibility: visible;
+
+#made-for-avenger-fans div{
+    padding: 40px;
 }
-    /* element to animate */
+
+#customers-choice div{
+    padding: 28px;
+}
+
+}
+/* end of small devices */
+
+
+/* medium devices */
+@media screen and (min-width: 768px){
+    #product-of-the-week div{
+        margin-left: 220px;
+        padding: 0;
+     }
+     
+
+     #avengers-suggestions{
+        margin-left: 70px;
+        padding: 0;
+     }
+
+     #made-for-avenger-fans div{
+        margin-left: 240px;
+        padding: 0;
+     }
+     
+     #customers-choice div{
+        margin-left: 220px;  
+        padding: 0;      
+     }
+
+   .blog-post p{
+    padding: 2px;
+   }
+
+
+
+}
+/* end of  medium devices */
+
+
+/* large devices */
+@media screen and (min-width: 992px){
+    
+     #product-of-the-week div{
+        margin: 0px 10px 0px 0px;
+        padding: 0;
+     }
+     
+     #avengers-suggestions{
+        margin: 0; 
+     }
+     
+     #avengers-suggestions div{
+        padding: 0;
+        margin: 0px 0px 0px 15px;
+     }
+
+     
+     #made-for-avenger-fans{
+        position: relative;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        
+     }
+
+     #made-for-avenger-fans div{
+        padding: 0;
+        margin: 0px 0px 0px 25px; 
+     }
+     
+
+     #customers-choice{
+        position: relative;
+        top: 50px;
+        padding: 0;
+        margin: 0;
+        
+     }
+
+     #customers-choice div{
+        padding: 0;
+        margin: 0px 0px 0px 5px; 
+     }
+
+     .blog-post{
+      position: relative;
+      top: 0px;
+      font-size: larger;
+     }
+
+     .doctor-strange{
+        visibility: hidden;
+     }
+    
+    .black-widow{
+        visibility: hidden;
+    }
+    .thor{
+        visibility: hidden;
+    }
+    
+    .vision{
+        visibility: hidden;
+    }
+    
+}
+
+
+/*  end of large devices */
+
+/* extra large devices */
+@media screen and (min-width: 1200px){
+
+    .doctor-strange{
+        visibility: visible;
+     }
+    
+    .black-widow{
+        visibility: visible;
+    }
+    .thor{
+        visibility: visible;
+    }
+    
+    .vision{
+        visibility: visible;
+    }
+
+   
+   
+     #product-of-the-week div{
+        margin: 0px 0px 0px 15px;
+        display: inline-block;
+        white-space: nowrap;
+     }
+     
+
+     #avengers-suggestions{
+        position: relative;
+        top: 0px;
+        padding: 0;
+     }
+     
+     #avengers-suggestions div{
+         margin: 0px 0px 0px 30px;
+         padding: 0;
+         display: inline-block;
+        white-space: nowrap;
+     }
+     
+     #made-for-avenger-fans{
+        position: relative;
+        top: 0px;
+        padding: 0;
+     }
+
+     #made-for-avenger-fans div{
+        margin: 0px 0px 0px 30px;
+         padding: 0;
+         display: inline-block;
+        white-space: nowrap;
+     }
+     
+
+     #customers-choice{
+        position: relative;
+        top: 0px;
+        padding: 0;
+     }
+
+     #customers-choice div{
+        margin: 0px 0px 0px 14px;
+        padding: 0;
+        display: inline-block;
+        white-space: nowrap;
+     }
+
+
+     .blog-post{
+            position: relative;
+            top: 0px;
+            font-size: larger;
+     }
+
+}
+/* end of extra large devices */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* element to animate */
 .logo{
     animation-name: drive;
     animation-duration: 5s;
@@ -302,7 +688,7 @@ section h2{
 
 
 /* Keyframes */
-@keyframes drive{
+ @keyframes drive{
     from{transform: translateX(0); }
-    to{transform: translateX(510px);}
+    to{transform: translateX(900px);}
 }
