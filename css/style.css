@@ -567,9 +567,12 @@ section h2{
     }
     
     .vision{
-        visibility: hidden;
+        visibility: visible;
     }
     
+    .iron-man{
+        visibility: visible;
+    }
 }
 
 
