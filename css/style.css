@@ -444,6 +444,10 @@ section h2{
 }
 
 
+section img{
+    visibility: visible;
+   }
+
 }
 
 /* end of extra small device */
@@ -466,6 +470,11 @@ section h2{
 #customers-choice div{
     padding: 28px;
 }
+
+section img{
+    visibility: visible;
+   }
+
 
 }
 /* end of small devices */
@@ -497,7 +506,10 @@ section h2{
    .blog-post p{
     padding: 2px;
    }
-
+ 
+   section img{
+    visibility: visible;
+   }
 
 
 }
@@ -555,24 +567,9 @@ section h2{
       font-size: larger;
      }
 
-     .doctor-strange{
-        visibility: hidden;
-     }
-    
-    .black-widow{
-        visibility: hidden;
-    }
-    .thor{
-        visibility: hidden;
-    }
-    
-    .vision{
+    section img{
         visibility: visible;
-    }
-    
-    .iron-man{
-        visibility: visible;
-    }
+       }
 }
 
 
@@ -600,7 +597,7 @@ section h2{
         visibility: visible;
     }
 
-   
+
    
      #product-of-the-week div{
         margin: 0px 0px 0px 15px;
